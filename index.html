@@ -253,7 +253,7 @@ body.profile-open{overflow:hidden}.team-profile-layer{display:none;position:fixe
 .champion-visual .champ-mascot{height:165px;width:100%;object-fit:contain;filter:drop-shadow(0 18px 16px rgba(0,0,0,.65))}
 .champion-visual .champ-wm{height:95px;display:flex;align-items:center;justify-content:center}
 .champion-visual .champ-wm img{max-width:100%;max-height:90px;object-fit:contain}
-.broadcast-franchise-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin-top:13px;max-height:208px;overflow:auto;padding-right:3px}
+.broadcast-franchise-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin-top:13px;max-height:none;overflow:visible;padding-right:0}
 .broadcast-franchise-grid .mini-wm{height:39px;min-width:0}
 .broadcast-franchise-grid .mini-wm img{max-height:32px}
 .broadcast-franchise-grid .mini-wm .mini-index{font-size:6px;color:#52645a;position:absolute;left:5px;top:4px}
@@ -267,7 +267,7 @@ body.profile-open{overflow:hidden}.team-profile-layer{display:none;position:fixe
 .broadcast-gotw .versus{font-size:17px}
 .history-wm-cell{display:flex;align-items:center;min-height:38px}
 .history-wm-cell img{max-width:190px;max-height:48px;width:auto;height:auto;object-fit:contain}
-@media(max-width:900px){.broadcast-franchise-grid{max-height:none}.champion-visual{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.broadcast-franchise-grid{max-height:none;overflow:visible}.champion-visual{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.champion-visual{grid-template-columns:1fr}.champion-visual .champ-mascot{height:135px}.broadcast-gotw{grid-template-columns:1fr 42px 1fr}.broadcast-gotw-side img{height:90px}}
 /* SHITBOWL — registro especial */
 .shitbowl-section{margin-top:18px}.shitbowl-card{position:relative;display:grid;grid-template-columns:150px 1fr;gap:28px;align-items:center;min-height:220px;padding:28px;background:radial-gradient(circle at 12% 50%,rgba(181,122,44,.16),transparent 30%),linear-gradient(135deg,#120d08,#080b09 58%,#17100a);border:1px solid #5a4228;overflow:hidden}.shitbowl-card:after{content:'SHITBOWL';position:absolute;right:-15px;bottom:-28px;font-size:100px;font-weight:1000;letter-spacing:-.08em;color:rgba(255,255,255,.025);pointer-events:none}.shitbowl-badge{width:120px;height:145px;border:1px solid #6a4b2a;background:linear-gradient(145deg,#1b140d,#0a0b09);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;border-radius:18px;box-shadow:0 18px 45px rgba(0,0,0,.45);transform:rotate(-3deg)}.shitbowl-badge span{font-size:48px;line-height:1}.shitbowl-badge strong{font-size:52px;line-height:.9;filter:drop-shadow(0 5px 5px rgba(0,0,0,.45))}.shitbowl-copy h2{font-size:clamp(38px,5vw,64px);margin:4px 0 6px;color:#f2d09a;letter-spacing:-.04em}.shitbowl-copy p{color:#a99784;max-width:650px}.shitbowl-status{margin-top:18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}.shitbowl-status span,.shitbowl-status b{border:1px solid #4a3927;background:#0b0d0b;padding:8px 11px;font-size:9px;letter-spacing:.12em}.shitbowl-status b{color:#f2d09a}.shitbowl-status small{color:#74695d}.shitbowl-last{margin-top:18px;display:grid;grid-template-columns:55px 1fr auto;align-items:center;gap:15px}.shitbowl-rank{font-size:30px;font-weight:1000;color:#7b6a58}.shitbowl-last .team-wordmark-real{justify-content:flex-start}.shitbowl-last small{display:block;color:#74695d;font-size:8px;letter-spacing:.12em;margin-top:5px}.shitbowl-record{text-align:right}.shitbowl-record b{display:block;font-size:25px;color:#f2d09a}.shitbowl-record span{font-size:8px;color:#74695d;letter-spacing:.12em}@media(max-width:700px){.shitbowl-card{grid-template-columns:1fr;text-align:center}.shitbowl-badge{margin:auto}.shitbowl-last{grid-template-columns:1fr}.shitbowl-last .team-wordmark-real{justify-content:center}.shitbowl-record{text-align:center}}
@@ -277,6 +277,12 @@ body.profile-open{overflow:hidden}.team-profile-layer{display:none;position:fixe
 .hc-editorial{background:#080c0a}.hc-editorial-top{display:grid;grid-template-columns:1.5fr .5fr;min-height:250px;border-bottom:1px solid #26372d}.hc-editorial-main{padding:34px 38px;background:linear-gradient(135deg,#0d1711,#070a08)}.hc-editorial-main h2{font-size:clamp(38px,5vw,66px);max-width:780px;margin:9px 0 14px}.hc-editorial-side{border-left:1px solid #26372d;padding:25px;display:flex;flex-direction:column;justify-content:space-between}.editorial-stat strong{display:block;font-size:29px;color:#62e98c}.editorial-stat span{font-size:8px;letter-spacing:.15em;color:#718278}.hc-editorial-body{display:grid;grid-template-columns:1.2fr .8fr;gap:12px;padding:14px}.editorial-feature{min-height:360px;border:1px solid #26372d;padding:25px;background:radial-gradient(circle at 50% 35%,rgba(98,233,140,.11),transparent 32%),#090e0b;display:grid;grid-template-rows:auto 1fr auto}.editorial-duel{display:grid;grid-template-columns:1fr 70px 1fr;align-items:center;text-align:center}.editorial-duel img{width:100%;height:180px;object-fit:contain}.editorial-duel .e-vs{font-size:22px;font-weight:1000;color:#62e98c}.editorial-links{display:grid;gap:10px}.editorial-link{border:1px solid #26372d;background:#0b110e;padding:17px;display:flex;justify-content:space-between;align-items:center;cursor:pointer}.editorial-link b{font-size:10px;letter-spacing:.12em}.editorial-link span{font-size:8px;color:#62e98c}
 @media(max-width:900px){.home-options-head{align-items:flex-start;flex-direction:column}.home-option-tabs{justify-content:flex-start}.hc-impact-main{grid-template-columns:1fr 70px 1fr;padding:0 10px}.hc-side img.mascot{height:250px}.hc-broadcast-head,.hc-franchise-hero,.hc-editorial-top{grid-template-columns:1fr}.hc-broadcast-score,.hc-editorial-side{border-left:0;border-top:1px solid #26372d}.hc-broadcast-grid,.hc-editorial-body{grid-template-columns:1fr 1fr}.franchise-wall{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.hc-impact{min-height:580px}.hc-impact-top{padding:18px}.hc-impact-main{grid-template-columns:1fr;gap:4px;padding:18px 8px}.hc-vs{width:55px;height:55px}.hc-vs b{font-size:20px}.hc-side img.mascot{height:175px}.hc-side .wm{height:45px}.hc-impact-bottom{grid-template-columns:1fr;text-align:center}.hc-broadcast-grid,.hc-editorial-body{grid-template-columns:1fr}.franchise-wall{grid-template-columns:1fr 1fr}.franchise-tile{min-height:125px}.hc-franchise-hero{padding:24px}.hc-franchise-hero .hero-mark img{max-height:110px}}
+</style>
+<meta name="description" content="ALTOZANO Fantasy Football League · Liga oficial fundada en 2021 · 14 franquicias.">
+<style>
+/* V5.13 — BROADCAST DEFINITIVO */
+#home .hc-broadcast-grid .hc-broadcast-card:last-child{min-height:330px}
+@media(max-width:900px){#home .hc-broadcast-grid .hc-broadcast-card:last-child{min-height:0}}
 </style>
 </head><body>
 <header class="header"><div class="brand" onclick="go('home')"><img src="assets/embedded/asset-01.png"><div><strong>ALTOZANO</strong><span>LIGA DE FANTASY FOOTBALL · FUNDADA EN 2021</span></div></div><nav id="nav"><a data-view="home" class="active">INICIO</a><a data-view="teams">EQUIPOS</a><a data-view="standings">CLASIFICACIÓN</a><a data-view="matchups">ENFRENTAMIENTOS</a><a data-view="playoffs">PLAYOFFS</a><a data-view="history">HISTORIA</a><a data-view="news">NOTICIAS</a><a data-view="memes">MEMES</a></nav><div class="right"><input id="search" class="search" placeholder="Buscar equipo..." autocomplete="off"></div></header>
@@ -291,10 +297,6 @@ body.profile-open{overflow:hidden}.team-profile-layer{display:none;position:fixe
 </div>
 <main class="wrap">
 <section id="home" class="view active">
-<div class="home-options-head">
-  <div><div class="eyebrow">ALTOZANO · REDISEÑO DE INICIO</div><h1>ELIGE LA PERSONALIDAD DE LA LIGA</h1><div class="sub">Cuatro conceptos para la página principal. Todos conservan la identidad oficial, los wordmarks y las franquicias reales.</div></div>
-  <div class="home-option-tabs"><button class="home-opt" data-home-option="1">01 · IMPACTO</button><button class="home-opt active" data-home-option="2">02 · BROADCAST</button><button class="home-opt" data-home-option="3">03 · FRANQUICIAS</button><button class="home-opt" data-home-option="4">04 · EDITORIAL</button></div>
-</div>
 <div id="homeConcepts">
   <div class="home-concept" data-concept="1"></div>
   <div class="home-concept active" data-concept="2"></div>
